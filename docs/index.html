@@ -1,48 +1,15 @@
-Skip to content
-alexdibol
-alexdibol.github.io
-Repository navigation
-Code
-Issues
-Pull requests
-Actions
-Projects
-Wiki
-Security
-Insights
-Settings
-Files
-Go to file
-t
-aifp
-index.html
-alexdibol.github.io
-/index.html
-alexdibol
-alexdibol
-Revise links and content for trading and banking sections
-d65f5c0
- · 
-12 hours ago
-alexdibol.github.io
-/index.html
-
-Code
-
-Blame
-694 lines (623 loc) · 27.5 KB
 <!doctype html>
 <html lang="en">
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
 
-  <title>AI Driven Finance and Quantum Inspired Finance — Alejandro Reynoso</title>
-  <meta name="description" content="AI-Driven Finance converging with Quantum-Inspired methods. Three pillars: executable course-books + Colab notebooks, long-form research books, and academic papers. Governance-first, auditable, reproducible." />
+  <title>AI Governance-First for Business & Financial Domains — Alejandro Reynoso</title>
+  <meta name="description" content="Governance-first applied AI for business and financial domains: book-supported courses with Colab notebooks across Law, Consulting, Accounting, Investment Banking, and Financial Advice." />
 
   <!-- Open Graph / Twitter -->
-  <meta property="og:title" content="AI Driven Finance and Quantum Inspired Finance — Alejandro Reynoso" />
-  <meta property="og:description" content="Three pillars: (1) Courses (books + Colab), (2) Long-format books & research, (3) Academic papers. Governance-first, auditable systems." />
+  <meta property="og:title" content="AI Governance-First for Business & Financial Domains — Alejandro Reynoso" />
+  <meta property="og:description" content="Governance-first applied AI: executable course-books + Colab notebooks across Law, Consulting, Accounting, Investment Banking, and Financial Advice." />
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://alexdibol.github.io" />
   <meta property="og:image" content="https://alexdibol.github.io/og-image.jpg" />
@@ -270,57 +237,6 @@ Blame
     }
     .callout strong{color:var(--text);}
 
-    /* LIST */
-    .list{
-      margin-top:18px;
-      padding-left:22px;
-      color:var(--muted);
-      max-width:110ch;
-    }
-    .list li{margin-bottom:12px;}
-    .list strong{color:var(--text);}
-
-    /* CONTACT */
-    .contactbox{
-      margin-top:18px;
-      padding:22px;
-      border-radius:18px;
-      border:1px solid var(--border);
-      background:rgba(20,24,54,0.72);
-      box-shadow:0 10px 30px rgba(0,0,0,0.30);
-      max-width:900px;
-    }
-    .contact-actions{
-      display:flex;
-      flex-wrap:wrap;
-      gap:12px;
-      margin-top:14px;
-    }
-    .btn{
-      display:inline-flex;
-      align-items:center;
-      justify-content:center;
-      padding:10px 12px;
-      border-radius:12px;
-      border:1px solid rgba(255,255,255,0.12);
-      background:rgba(0,0,0,0.18);
-      color:var(--text);
-      font-weight:900;
-      font-size:12px;
-      letter-spacing:0.06em;
-      text-transform:uppercase;
-      text-decoration:none;
-    }
-    .btn:hover{
-      border-color:rgba(110,231,200,0.26);
-      background:rgba(20,24,54,0.62);
-      text-decoration:none;
-    }
-    .btn.primary{
-      border:1px solid rgba(122,162,255,0.35);
-      background:linear-gradient(135deg, rgba(122,162,255,0.16), rgba(110,231,200,0.10));
-    }
-
     /* DISCLAIMER */
     .small{
       font-size:13px;
@@ -371,25 +287,21 @@ Blame
     <header>
       <div class="logo">Alejandro Reynoso</div>
       <nav class="nav" aria-label="Primary">
-        <a href="#pillars-1">Pillar 1: Courses</a>
-        <a href="#pillars-2">Pillar 2: Long-Format</a>
-        <a href="#pillars-3">Pillar 3: Papers</a>
-        <a href="#focus">Conceptual Focus</a>
-        <a href="#contact">Contact</a>
+        <a href="#pillar-1">Pillar 1: Courses</a>
+        <a href="#independent-evaluation">Independent Evaluation</a>
         <a href="#disclaimer">Disclaimers</a>
       </nav>
     </header>
 
     <!-- HERO -->
     <section class="hero" id="top">
-      <div class="kicker">Three pillars · Governance-first · Auditable · Reproducible</div>
-      <h1>AI Driven Finance and Quantum Inspired Finance</h1>
+      <div class="kicker">Governance-first · Auditable · Reproducible</div>
+      <h1>AI GOVERNANCE-FIRST<br/>FOR BUSINESS &amp; FINANCIAL DOMAINS</h1>
 
       <p class="subtitle">
-        This site is organized as <strong>three pillars</strong> — all built with the same intent:
-        to turn ideas into <strong>auditable, reproducible</strong> systems and practitioner-ready learning paths.
-        The unifying theme is the convergence of <strong>AI-driven finance</strong> with <strong>quantum-inspired</strong> methods
-        (geometry, optimization, and structured reasoning) — without sacrificing governance, traceability, and accountability.
+        This microsite focuses on <strong>governance-first applied AI</strong> in professional domains.
+        The goal is not “more AI,” but <strong>defensible AI</strong>: bounded use, explicit assumptions,
+        verification discipline, and artifacts that support review.
       </p>
 
       <div class="pillrow" aria-label="Focus priorities">
@@ -399,67 +311,42 @@ Blame
       </div>
 
       <div class="callout" style="margin-top:18px;">
-        <strong>Navigation:</strong> Pillar 1 contains executable course-books and notebook stacks; Pillar 2 contains long-format books and research notes;
-        Pillar 3 contains academic papers intended to be modular and citable.
-      </div>
-    </section>
-
-    <!-- CONCEPTUAL FOCUS -->
-    <section class="section" id="focus">
-      <h2>Conceptual Focus</h2>
-
-      <div class="grid">
-        <div class="card">
-          <h3>Quantum-Inspired Finance</h3>
-          <p>
-            Classical methods inspired by quantum computing, geometry, and structured optimization —
-            applied to portfolios, regimes, risk, and decision systems with verifiable artifacts.
-          </p>
-        </div>
-
-        <div class="card">
-          <h3>AI-Driven Finance (Built to Run)</h3>
-          <p>
-            Engineering-first AI for finance: reproducible notebooks, explicit assumptions,
-            structured outputs, and governance gates for institutional-quality work.
-          </p>
-        </div>
-
-        <div class="card">
-          <h3>Structural Reasoning Systems</h3>
-          <p>
-            Reasoning treated as a designed system: artifacts, roles, verification discipline, and
-            explicit uncertainty — scaling capability without scaling risk.
-          </p>
-        </div>
+        <strong>Scope:</strong> Only Pillar 1 is shown here (book-supported courses with Colab notebooks).
+        The bottom section preserves the original <strong>disclaimers, license, and legends</strong>, plus a placeholder for independent evaluation.
       </div>
     </section>
 
     <!-- PILLAR 1 -->
-    <section class="section" id="pillars-1">
+    <section class="section" id="pillar-1">
       <h2>Pillar 1 — Original Book-Supported Courses (with Colab Notebooks)</h2>
 
       <p>
-        This follows the <strong>governance-first</strong> approach to AI implementation in practice.
-        It is a solid foundation for <strong>investment bankers</strong> looking at governed implementation of AI.
+        Courses are designed to be executable: reading is paired with running, and running is paired with artifacts
+        that can be inspected, reconstructed, and reviewed.
       </p>
 
       <div class="grid">
-        <!-- Only volumes / landing pages (no repo links) -->
-        <a class="card linkcard" href="/aifp/" aria-label="AI for Financial Practitioners — Volumes I–V">
-          <h3>AI for Financial Practitioners — Volumes I–V</h3>
+
+        <a class="card linkcard" href="https://alexdibol.github.io/ai-law/" target="_blank" rel="noopener" aria-label="Legal Applications for Generative AI — Landing Page">
+          <h3>Legal Applications for Generative AI</h3>
           <p>
-            The flagship curriculum connecting AI-driven finance with quantum-inspired thinking —
-            built as an executable course (books + releases + Colab notebooks) with governance-first discipline.
+            Governance-first practical guide for legal workflows — explicit uncertainty, verification discipline, and zero tolerance for invented authority.
           </p>
-          <div class="hint">Open volumes page →</div>
+          <div class="hint">Open landing page →</div>
         </a>
 
-        <a class="card linkcard" href="https://alexdibol.github.io/ai-algo-trading-notebooks/" target="_blank" rel="noopener" aria-label="Foundations of Modern Algorithmic Trading — Landing Page">
-          <h3>Foundations of Modern Algorithmic Trading — Volumes I-III</h3>
+        <a class="card linkcard" href="https://alexdibol.github.io/ai-consulting/" target="_blank" rel="noopener" aria-label="AI Consulting and Corporate Strategy — Landing Page">
+          <h3>AI Consulting and Corporate Strategy</h3>
           <p>
-            A governance-first collection with a dedicated user manual and an executable notebook stack.
-            Covers the end-to-end engineering discipline: honest backtesting, ML, portfolios, execution realism, and artifacts.
+            Governance-first courseware for consulting and corporate strategy workflows — built for defensible practice, reusable assets, and auditable artifacts.
+          </p>
+          <div class="hint">Open landing page →</div>
+        </a>
+
+        <a class="card linkcard" href="https://alexdibol.github.io/ai-accounting/" target="_blank" rel="noopener" aria-label="AI for Audit and Accounting — Landing Page">
+          <h3>AI for Audit and Accounting</h3>
+          <p>
+            Governance-first courseware for U.S. audit and accounting practice — capability ↑ ⇒ risk ↑ ⇒ controls ↑, with auditable artifacts and lab workflows.
           </p>
           <div class="hint">Open landing page →</div>
         </a>
@@ -473,14 +360,6 @@ Blame
           <div class="hint">Open landing page →</div>
         </a>
 
-        <a class="card linkcard" href="https://alexdibol.github.io/ai-consulting/" target="_blank" rel="noopener" aria-label="AI Consulting and Corporate Strategy — Landing Page">
-          <h3>AI Consulting and Corporate Strategy</h3>
-          <p>
-            Governance-first courseware for consulting and corporate strategy workflows — built for defensible practice, reusable assets, and auditable artifacts.
-          </p>
-          <div class="hint">Open landing page →</div>
-        </a>
-
         <a class="card linkcard" href="https://alexdibol.github.io/ai-financial_advisors/" target="_blank" rel="noopener" aria-label="AI for Financial Advisors — Landing Page">
           <h3>AI for Financial Advisors</h3>
           <p>
@@ -489,136 +368,22 @@ Blame
           <div class="hint">Open landing page →</div>
         </a>
 
-        <a class="card linkcard" href="https://alexdibol.github.io/ai-accounting/" target="_blank" rel="noopener" aria-label="AI for Audit and Accounting — Landing Page">
-          <h3>AI for Audit and Accounting</h3>
-          <p>
-            Governance-first courseware for U.S. audit and accounting practice — capability ↑ ⇒ risk ↑ ⇒ controls ↑, with auditable artifacts and lab workflows.
-          </p>
-          <div class="hint">Open landing page →</div>
-        </a>
-
-        <a class="card linkcard" href="https://alexdibol.github.io/ai-law/" target="_blank" rel="noopener" aria-label="Legal Applications for Generative AI — Landing Page">
-          <h3>Legal Applications for Generative AI</h3>
-          <p>
-            Governance-first practical guide for legal workflows — explicit uncertainty, verification discipline, and zero tolerance for invented authority.
-          </p>
-          <div class="hint">Open landing page →</div>
-        </a>
       </div>
 
       <div class="callout">
-        <strong>Operating idea:</strong> Courses are designed to be executable: reading is paired with running, and running is paired with artifacts
-        that can be inspected, reconstructed, and reviewed.
+        <strong>Operating idea:</strong> capability ↑ ⇒ risk ↑ ⇒ controls ↑. Every workflow is framed to produce evidence, not vibes.
       </div>
     </section>
 
-    <!-- PILLAR 2 -->
-    <section class="section" id="pillars-2">
-      <h2>Pillar 2 — Long-Format Books and Research</h2>
+    <!-- INDEPENDENT EVALUATION PLACEHOLDER -->
+    <section class="section" id="independent-evaluation">
+      <h2>Independent Evaluation (Placeholder)</h2>
 
       <div class="card" style="text-align:left;">
-        <h3>Monographs &amp; Research Notes</h3>
+        <h3>External review status</h3>
         <p>
-          The long-form layer: books and deep research write-ups that develop ideas beyond a single paper.
-          The focus remains the same: AI-driven finance, quantum-inspired thinking, and governance-first engineering.
-        </p>
-        <div class="callout" style="margin-top:14px;">
-          <strong>How to use this pillar:</strong> Start with a monograph, then move into runnable course notebooks when you want execution artifacts.
-          Use papers (Pillar 3) when you need citable, modular results.
-        </div>
-      </div>
-
-      <div class="grid">
-        <a class="card linkcard" href="https://github.com/alexdibol/books/tree/main" target="_blank" rel="noopener" aria-label="Books Repository">
-          <h3>Books Repository</h3>
-          <p>
-            Long-format books and monographs across AI, finance, governance, and quantum-inspired approaches — designed as durable references.
-          </p>
-          <div class="hint">Open repo →</div>
-        </a>
-
-        <div class="card">
-          <h3>How to Use This Pillar</h3>
-          <p>
-            Start with a monograph, then move into runnable course notebooks when you want execution artifacts.
-            Use papers (Pillar 3) when you need citable, modular results.
-          </p>
-        </div>
-
-        <a class="card linkcard" href="https://github.com/alexdibol" target="_blank" rel="noopener" aria-label="GitHub Profile">
-          <h3>Open Collaboration</h3>
-          <p>
-            All work is built in public with open-source tooling. If you want to collaborate, start from the GitHub profile and repositories.
-          </p>
-          <div class="hint">Open profile →</div>
-        </a>
-      </div>
-    </section>
-
-    <!-- PILLAR 3 -->
-    <section class="section" id="pillars-3">
-      <h2>Pillar 3 — Academic Papers</h2>
-
-      <div class="card" style="text-align:left;">
-        <h3>Working Papers &amp; Applied Studies</h3>
-        <p>
-          Academic papers are the modular layer: focused results, working drafts, and applied studies.
-          Built to be inspectable and easy to cite — and to connect cleanly back to the long-form books and the executable courses.
-        </p>
-      </div>
-
-      <div class="grid">
-        <a class="card linkcard" href="https://github.com/alexdibol/papers" target="_blank" rel="noopener" aria-label="Papers Repository">
-          <h3>Papers Repository</h3>
-          <p>
-            Working papers and applied research on engineered intelligence, structural reasoning, and financial modeling.
-          </p>
-          <div class="hint">Open repo →</div>
-        </a>
-
-        <div class="card">
-          <h3>How the Three Pillars Connect</h3>
-          <p>
-            Papers (Pillar 3) provide modular results, Books (Pillar 2) develop the deep narrative and theory,
-            and Courses (Pillar 1) provide executable implementations and artifacts.
-          </p>
-        </div>
-
-        <div class="card">
-          <h3>Reproducibility Focus</h3>
-          <p>
-            When a paper introduces a method, the goal is to make it runnable (or align it) with notebook workflows:
-            deterministic runs, logged assumptions, and explicit artifacts.
-          </p>
-        </div>
-      </div>
-    </section>
-
-    <!-- CONTACT -->
-    <section class="section" id="contact">
-      <h2>Contact</h2>
-
-      <div class="contactbox">
-        <p style="margin:0;color:var(--muted);max-width:110ch;">
-          Interested in collaborating on AI-driven finance, quantum-inspired methods, governance-first applied AI, or research + teaching initiatives?
-          I welcome partnerships across academia, industry, and innovation ecosystems.
-        </p>
-
-        <div class="contact-actions" aria-label="Contact actions">
-          <a class="btn primary" href="mailto:areynoso@yahoo.com">Email</a>
-          <a class="btn" href="https://github.com/alexdibol" target="_blank" rel="noopener">GitHub</a>
-          <a class="btn" href="#pillars-1">Courses</a>
-          <a class="btn" href="#pillars-2">Long-Format</a>
-          <a class="btn" href="#pillars-3">Papers</a>
-        </div>
-
-        <p style="margin:16px 0 0;color:var(--muted);">
-          <strong style="color:var(--text);">Email:</strong>
-          <a href="mailto:areynoso@yahoo.com">areynoso@yahoo.com</a>
-        </p>
-        <p style="margin:8px 0 0;color:var(--muted);">
-          <strong style="color:var(--text);">GitHub:</strong>
-          <a href="https://github.com/alexdibol" target="_blank" rel="noopener">github.com/alexdibol</a>
+          Placeholder for independent evaluation notes, scope, methodology, and results.
+          (To be populated when a third-party review is completed.)
         </p>
       </div>
     </section>
@@ -713,7 +478,7 @@ Blame
     </section>
 
     <footer class="footer">
-      © <span id="y"></span> Alejandro Reynoso · AI Driven Finance and Quantum Inspired Finance
+      © <span id="y"></span> Alejandro Reynoso · AI Governance-First for Business &amp; Financial Domains
       <br/>Hosted on GitHub Pages · Built with governance-first discipline
     </footer>
 
@@ -725,6 +490,4 @@ Blame
   </script>
 </body>
 </html>
- 
-alexdibol.github.io/index.html at main · alexdibol/alexdibol.github.io
 
