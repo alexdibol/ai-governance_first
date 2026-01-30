@@ -3,8 +3,8 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Governance-First AI — Applied to Financial Practice and Law</title>
-  <meta name="description" content="Governance-First AI: a collection of applied, governance-first course-books with Colab notebooks (Accounting, Law, Financial Advice, Consulting, Investment Banking, and Fine-Tuning). Designed to remain valid across model generations." />
+  <title>Governance-First AI Collection — Applied to Financial Practice and Law</title>
+  <meta name="description" content="A six-book Governance-First AI collection for regulated professional practice (Accounting & Audit, Law, Financial Advice, Consulting, Investment Banking, and Fine-Tuning). Each book includes a PDF and companion Colab notebooks (Chapters 1–5). Built to remain valid across model generations." />
 
   <style>
     :root{
@@ -68,13 +68,13 @@
       font-size:38px;
       margin:12px 0 10px;
       line-height:1.15;
-      max-width:70ch;
+      max-width:72ch;
       text-transform:uppercase;
       letter-spacing:0.02em;
     }
     .subtitle{
       margin:0;
-      max-width:105ch;
+      max-width:110ch;
       color:var(--muted);
       font-size:16px;
     }
@@ -85,7 +85,7 @@
       margin:0 0 14px;
       letter-spacing:-0.02em;
     }
-    .section p{color:var(--muted);max-width:105ch;margin:10px 0;}
+    .section p{color:var(--muted);max-width:110ch;margin:10px 0;}
 
     .grid{
       display:grid;
@@ -144,31 +144,18 @@
       border:1px solid rgba(122,162,255,0.18);
       background:linear-gradient(135deg, rgba(122,162,255,0.06), rgba(110,231,200,0.04));
       color:var(--muted);
-      max-width:105ch;
+      max-width:110ch;
     }
     .callout strong{color:var(--text);}
 
-    .pillrow{display:flex;flex-wrap:wrap;gap:10px;margin-top:16px;}
-    .pill{
-      display:inline-flex;
-      align-items:center;
-      gap:8px;
-      padding:8px 10px;
-      border-radius:999px;
-      border:1px solid rgba(255,255,255,0.10);
-      background:rgba(0,0,0,0.18);
+    .list{
+      margin-top:18px;
+      padding-left:22px;
       color:var(--muted);
-      font-size:12px;
-      font-weight:700;
-      letter-spacing:0.02em;
+      max-width:110ch;
     }
-    .dot{
-      width:8px;height:8px;border-radius:999px;
-      background:rgba(122,162,255,0.9);
-      box-shadow:0 0 0 3px rgba(122,162,255,0.18);
-    }
-    .dot.g{background:rgba(110,231,200,0.95); box-shadow:0 0 0 3px rgba(110,231,200,0.18);}
-    .dot.y{background:rgba(255,210,122,0.95); box-shadow:0 0 0 3px rgba(255,210,122,0.18);}
+    .list li{margin-bottom:12px;}
+    .list strong{color:var(--text);}
 
     .reviewbox{
       margin-top:18px;
@@ -177,7 +164,7 @@
       border:1px solid rgba(110,231,200,0.18);
       background:linear-gradient(135deg, rgba(110,231,200,0.06), rgba(122,162,255,0.05));
       color:var(--muted);
-      max-width:105ch;
+      max-width:110ch;
     }
     .reviewbox strong{color:var(--text);}
     .reviewbox .stars{color:var(--warn);font-weight:900;letter-spacing:0.08em;}
@@ -204,7 +191,6 @@
       border:1px solid rgba(255,255,255,0.10);
     }
 
-    .small{font-size:13px;color:var(--muted);max-width:105ch;}
     .footer{
       margin-top:80px;
       padding-top:24px;
@@ -213,104 +199,141 @@
       font-size:13px;
       text-align:center;
     }
+    .small{font-size:13px;color:var(--muted);max-width:110ch;}
+    .pillrow{display:flex;flex-wrap:wrap;gap:10px;margin-top:16px;}
+    .pill{
+      display:inline-flex;
+      align-items:center;
+      gap:8px;
+      padding:8px 10px;
+      border-radius:999px;
+      border:1px solid rgba(255,255,255,0.10);
+      background:rgba(0,0,0,0.18);
+      color:var(--muted);
+      font-size:12px;
+      font-weight:700;
+      letter-spacing:0.02em;
+    }
+    .dot{
+      width:8px;height:8px;border-radius:999px;
+      background:rgba(122,162,255,0.9);
+      box-shadow:0 0 0 3px rgba(122,162,255,0.18);
+    }
+    .dot.g{background:rgba(110,231,200,0.95); box-shadow:0 0 0 3px rgba(110,231,200,0.18);}
+    .dot.y{background:rgba(255,210,122,0.95); box-shadow:0 0 0 3px rgba(255,210,122,0.18);}
   </style>
 </head>
 
 <body>
   <main class="container">
 
-    <section class="hero">
-      <div class="kicker">Governance-first · applied to financial practice and law · PDF books + companion Colab notebooks</div>
+    <section class="hero" id="top">
+      <div class="kicker">Governance-first · applied to financial practice and law · six books · PDFs + companion Colab notebooks</div>
       <h1>Governance-First AI Collection</h1>
 
       <p class="subtitle">
-        A six-book collection for regulated professional work. The organizing principle is durable and model-agnostic:
-        <em>Capability increases → Risk increases → Controls MUST increase</em>.
-        Each book is paired with a companion Colab notebook set so students can implement the same governance disciplines
-        taught in the text—scope control, behavioral evaluation, evidence logging, reviewer sign-off—under a repeatable structure.
+        A six-book collection for regulated professional practice in finance and law. The purpose is durable governance that survives model change:
+        <em>Capability increases → Risk increases → Controls MUST increase</em>. Each book is paired with Colab notebooks so students can implement
+        governance patterns (scope, verification discipline, audit artifacts, review gates) rather than merely read about them.
+        The author is also the instructor and accompanies students through the journey.
       </p>
 
       <div class="pillrow" aria-label="Governance priorities">
         <span class="pill"><span class="dot"></span> Facts vs Assumptions Discipline</span>
-        <span class="pill"><span class="dot g"></span> Evaluation + Approval Gates</span>
-        <span class="pill"><span class="dot y"></span> Audit Artifacts + Accountability</span>
+        <span class="pill"><span class="dot g"></span> Behavioral Evaluation + Release Gates</span>
+        <span class="pill"><span class="dot y"></span> Audit Artifacts + Human Accountability</span>
       </div>
 
       <div class="callout">
-        <strong>Instructor-led promise:</strong> The author is also the instructor and accompanies students through the journey.
-        The goal is not “more AI.” The goal is defensible work products that survive supervision, reconstruction, and professional scrutiny.
+        <strong>Collection-wide promise:</strong> These books treat GenAI as professional infrastructure—useful only when paired with verification,
+        supervision, recordkeeping, privacy discipline, and explicit accountability. The aim is not speed. The aim is defensible work product.
+      </div>
+    </section>
+
+    <section class="section" id="what-you-get">
+      <h2>What You Get (Across the Entire Collection)</h2>
+      <p>
+        The common spine of every volume is governance that remains valid as models evolve. The books intentionally focus on durable discipline,
+        not transient UI features. Each volume includes classroom-ready, executable notebooks aligned to the book’s structure.
+      </p>
+
+      <ul class="list">
+        <li><strong>Governance-first mental model:</strong> generation is separated from verification; outputs are treated as <em>Not verified</em> until validated by a human.</li>
+        <li><strong>Scope and boundary control:</strong> clear task definitions, forbidden behaviors, refusal posture, and “stop-if” rules when facts are missing.</li>
+        <li><strong>Auditability by design:</strong> repeatable artifacts and logs so work can be reconstructed and reviewed, not merely observed.</li>
+        <li><strong>Professional defensibility:</strong> designed for supervision, documentation, and regulated workflows (finance + law).</li>
+        <li><strong>Instructor-led execution:</strong> each book is paired with Colab notebooks so students practice the discipline end-to-end.</li>
+        <li><strong>Obsolescence resistance:</strong> the structure is model-agnostic—new models can be swapped in without weakening the governance frame.</li>
+      </ul>
+
+      <div class="callout">
+        <strong>Why six books?</strong> The domains differ, but the governance discipline is unified. The sixth volume (Fine-Tuning) extends the same
+        philosophy into training itself—treating fine-tuning as an institutional governance act, not a performance trick.
       </div>
     </section>
 
     <section class="section" id="books">
       <h2>The Six Books</h2>
       <p>
-        Each volume is a complete, governed workflow in a specific domain. Every book includes a Colab companion so the discipline is executable
-        rather than theoretical.
+        Each card links to the book’s landing page (PDF + notebooks). Together, they form a coherent, governance-first curriculum.
       </p>
 
       <div class="grid">
-        <!-- 1) Accounting & Audit -->
         <a class="card linkcard" href="https://alexdibol.github.io/ai-accounting/" target="_blank" rel="noopener">
           <h3>AI for Audit & Accounting (Governance-First)</h3>
-          <p>Governed drafting, interpretation, and documentation patterns for audit/accounting work under professional constraints.</p>
+          <p>Controls for audit/accounting drafting, interpretation, workpaper hygiene, and reviewable deliverables under professional constraints.</p>
           <div class="hint">Open landing page →</div>
         </a>
 
-        <!-- 2) Law -->
         <a class="card linkcard" href="https://alexdibol.github.io/ai-law/" target="_blank" rel="noopener">
           <h3>Practical Legal Applications of Generative AI (AI LAW)</h3>
-          <p>Governance-first legal workflows: generation vs verification, no invented authority, defensible review packets.</p>
+          <p>Governance-first legal workflows: no invented authority, generation vs verification, defensible review packets, and professional responsibility framing.</p>
           <div class="hint">Open landing page →</div>
         </a>
 
-        <!-- 3) Financial Advice -->
         <a class="card linkcard" href="https://alexdibol.github.io/ai-financial_advisors/" target="_blank" rel="noopener">
           <h3>AI for Financial Advisors (Governance-First)</h3>
-          <p>Best-interest discipline, supervision-ready artifacts, and boundary controls for client-facing advisory workflows.</p>
+          <p>Best-interest discipline, supervision-ready evidence, suitability boundary controls, and client-facing safety patterns.</p>
           <div class="hint">Open landing page →</div>
         </a>
 
-        <!-- 4) Consulting -->
         <a class="card linkcard" href="https://alexdibol.github.io/ai-consulting/" target="_blank" rel="noopener">
           <h3>AI Consulting & Corporate Strategy (Governance-First)</h3>
-          <p>Transformation work with traceability: assumptions registers, decision-laundering controls, and reviewable deliverables.</p>
+          <p>Transformation work that stays reviewable: assumptions registers, alternatives framing, decision-laundering controls, and evidence bundles.</p>
           <div class="hint">Open landing page →</div>
         </a>
 
-        <!-- 5) Investment Banking -->
         <a class="card linkcard" href="https://alexdibol.github.io/ai-investment_banking/" target="_blank" rel="noopener">
           <h3>AI in Investment Banking</h3>
-          <p>MNPI hygiene, disclosure discipline, and supervision-ready artifacts for banking workflows and client materials.</p>
+          <p>MNPI hygiene, disclosure discipline, supervision posture, and controlled drafting for client materials and banking workflows.</p>
           <div class="hint">Open landing page →</div>
         </a>
 
-        <!-- 6) Fine-Tuning (NEW) -->
         <a class="card linkcard" href="https://alexdibol.github.io/ai-fine_tuning/" target="_blank" rel="noopener">
           <h3>Fine-Tuning for Financial Practitioners (Governance-First)</h3>
           <p>
-            The sixth volume: governance moves from “use” into “training itself.” A task-centric ladder that remains valid as new base models arrive:
-            scope, forbidden behaviors, behavioral evaluation, approval gates, audit artifacts, monitoring, rollback, and accountability.
+            The sixth volume: governed fine-tuning for regulated work. Task-centric training discipline—scope, forbidden behaviors, evaluation harnesses,
+            approval gates, audit artifacts, monitoring, rollback, and accountability—built to stay valid as new base models arrive.
           </p>
           <div class="hint">Open landing page →</div>
         </a>
       </div>
 
       <div class="callout">
-        <strong>Obsolescence resistance by design:</strong> The collection does not depend on a particular model vendor or UI.
-        It teaches durable controls—evidence, review, supervision, and accountability—that can be re-applied as models change.
+        <strong>Model-agnostic by design:</strong> Each volume can update to new base models without changing the governance spine:
+        define the task, prohibit unsafe behaviors, evaluate behaviorally, gate releases, log evidence, and keep humans responsible.
       </div>
     </section>
 
-    <section class="section" id="newbook-eval">
-      <h2>Independent Opinion on the New Volume</h2>
+    <section class="section" id="independent-opinion">
+      <h2>Independent Opinion (About the Entire Collection)</h2>
       <p>
-        This section demonstrates governance-first documentation of third-party feedback. It is <em>not</em> verification of correctness,
+        This section is included to demonstrate governance-first documentation of third-party feedback. It is not verification of correctness,
         safety, compliance, or suitability for any deployment. Treat it as non-binding opinion.
       </p>
 
       <div class="reviewbox">
-        <div><strong>Book Evaluation: Fine-Tuning for Financial Practitioners (Governance-First)</strong></div>
+        <div><strong>Evaluation: Governance-First AI Collection (Six-Book Series)</strong></div>
         <div class="stars" aria-label="Five stars">⭐⭐⭐⭐⭐</div>
 
         <div class="reviewmeta">
@@ -320,25 +343,26 @@
         <hr/>
 
         <p style="margin:0;">
-          This volume succeeds precisely because it is not about models. It is about governance. As the sixth book in the Governance-First series,
-          it completes the progression by moving controls from “use” into “training itself,” treating fine-tuning as an institutional act that must be
-          documented, reviewable, and defensible. The pedagogy is exceptionally strong: the structure teaches behavioral specialization (scope, refusal
-          posture, uncertainty discipline, and separation of facts vs assumptions) rather than transient tooling. The companion notebooks function as
-          governance demonstrators—showing audit artifacts, release gates, and reviewer accountability—rather than engineering labs.
+          This collection’s professional value is unusually high because it treats generative AI as regulated-work infrastructure rather than novelty.
+          Across six domains (audit/accounting, law, financial advice, consulting/strategy, investment banking, and fine-tuning), the unifying pedagogy
+          is not “prompting,” but disciplined operations: explicit scope, refusal posture, separation of generation vs verification, evidence capture,
+          reviewer accountability, and supervision-ready artifacts. That emphasis makes the curriculum immediately useful to practitioners and
+          exceptionally teachable to MBA/MFin students because each book converts abstract “AI risk” into concrete, repeatable work patterns.
         </p>
 
         <p style="margin:12px 0 0;">
-          The framework is resilient to obsolescence because it is model-agnostic by design: the same discipline applies as new base models arrive.
-          By focusing on durable institutional controls—task boundary definition, behavioral evaluation, approval criteria, traceability, and rollback—the
-          book teaches practitioners how to update models without sacrificing governance, structure, or professional responsibility.
+          The series is resilient to obsolescence by design. Its core controls are model-agnostic and survive vendor churn: when a new base model arrives,
+          the structure remains—task boundaries, behavioral evaluation, approval gates, traceability, and rollback. The sixth volume on fine-tuning
+          completes the arc by extending governance into training itself, showing how organizations can make discipline default behavior while preserving
+          human responsibility. In short: the collection is not about today’s model; it is about durable professional discipline that can update to tomorrow’s.
         </p>
 
         <hr/>
 
         <div><strong>Canonical considerations (how to interpret this evaluation):</strong></div>
         <ul>
-          <li><strong>Opinion, not evidence:</strong> Narrative feedback only; not an audit, certification, benchmark, or compliance determination.</li>
-          <li><strong>Model limitations apply:</strong> LLM outputs can be persuasive without being correct; treat as non-authoritative until independently verified.</li>
+          <li><strong>Opinion, not evidence:</strong> Narrative feedback only; not an audit, benchmark, certification, or compliance determination.</li>
+          <li><strong>Model limitations apply:</strong> LLM outputs may be persuasive without being correct; independently verify any claims.</li>
           <li><strong>No endorsement implied:</strong> Mention of OpenAI/ChatGPT does not imply OpenAI endorsement of this collection.</li>
           <li><strong>Governance-first labeling:</strong> Included to show how external opinions can be documented without being confused for verification.</li>
         </ul>
@@ -370,7 +394,7 @@
 
       <p class="small">
         <strong>Use of generative AI tools (transparency):</strong> Generative AI tools may have been used to assist in drafting, editing, formatting,
-        or code generation during the development of the books and companion notebooks. However, conceptual design, pedagogical structure,
+        or code generation during the development of this collection and its companion notebooks. However, conceptual design, pedagogical structure,
         governance logic, integration decisions, and final editorial judgment were human-led, human-supervised, and human-approved at all times.
         The author assumes full responsibility for the content, structure, and conclusions of the collection.
       </p>
