@@ -3,8 +3,8 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Governance-First AI Collection — Applied to Financial Practice and Law</title>
-  <meta name="description" content="A six-book Governance-First AI collection for regulated professional practice (Accounting & Audit, Law, Financial Advice, Consulting, Investment Banking, and Fine-Tuning). Each book includes a PDF and companion Colab notebooks (Chapters 1–5). Built to remain valid across model generations." />
+  <title>Governance-First Collection — Machine Learning + Applied AI for Financial Practice and Law</title>
+  <meta name="description" content="A Governance-First collection for regulated professional practice: 1 foundational Machine Learning volume + 6 Applied AI volumes (Accounting & Audit, Law, Financial Advice, Consulting, Investment Banking, and Fine-Tuning). Each book includes a PDF and companion Colab notebooks (Chapters 1–5). Built to remain valid across model generations." />
 
   <style>
     :root{
@@ -221,6 +221,26 @@
     }
     .dot.g{background:rgba(110,231,200,0.95); box-shadow:0 0 0 3px rgba(110,231,200,0.18);}
     .dot.y{background:rgba(255,210,122,0.95); box-shadow:0 0 0 3px rgba(255,210,122,0.18);}
+
+    .linkbar{
+      margin-top:16px;
+      display:flex;
+      flex-wrap:wrap;
+      gap:10px;
+      align-items:center;
+      color:var(--muted);
+      font-size:13px;
+    }
+    .linkbar a{
+      display:inline-flex;
+      align-items:center;
+      gap:8px;
+      padding:8px 10px;
+      border-radius:12px;
+      border:1px solid rgba(255,255,255,0.10);
+      background:rgba(0,0,0,0.16);
+    }
+    .linkbar a:hover{background:rgba(0,0,0,0.26); text-decoration:none;}
   </style>
 </head>
 
@@ -228,14 +248,16 @@
   <main class="container">
 
     <section class="hero" id="top">
-      <div class="kicker">Governance-first · applied to financial practice and law · six books · PDFs + companion Colab notebooks</div>
-      <h1>Governance-First AI Collection</h1>
+      <div class="kicker">Governance-first · applied to financial practice and law · six + one volumes · PDFs + companion Colab notebooks</div>
+      <h1>Governance-First Collection</h1>
 
       <p class="subtitle">
-        A six-book collection for regulated professional practice in finance and law. The purpose is durable governance that survives model change:
-        <em>Capability increases → Risk increases → Controls MUST increase</em>. Each book is paired with Colab notebooks so students can implement
-        governance patterns (scope, verification discipline, audit artifacts, review gates) rather than merely read about them.
-        The author is also the instructor and accompanies students through the journey.
+        A <strong>six + one</strong> collection for regulated professional practice in finance and law:
+        <strong>six Applied AI volumes</strong> plus <strong>one foundational Machine Learning volume</strong>.
+        The purpose is durable governance that survives model change:
+        <em>Capability increases → Risk increases → Controls MUST increase</em>.
+        Each book is paired with Colab notebooks so students implement governance patterns (scope, verification discipline, audit artifacts, review gates)
+        rather than merely read about them. The author is also the instructor and accompanies students through the journey.
       </p>
 
       <div class="pillrow" aria-label="Governance priorities">
@@ -244,8 +266,13 @@
         <span class="pill"><span class="dot y"></span> Audit Artifacts + Human Accountability</span>
       </div>
 
+      <div class="linkbar" aria-label="Landing pages">
+        <a href="https://alexdibol.github.io/ai-governance_first" target="_blank" rel="noopener">AI Collection landing page →</a>
+        <a href="https://alexdibol.github.io/ml-governace_first" target="_blank" rel="noopener">Machine Learning foundation landing page →</a>
+      </div>
+
       <div class="callout">
-        <strong>Collection-wide promise:</strong> These books treat GenAI as professional infrastructure—useful only when paired with verification,
+        <strong>Collection-wide promise:</strong> These books treat GenAI and ML as professional infrastructure—useful only when paired with verification,
         supervision, recordkeeping, privacy discipline, and explicit accountability. The aim is not speed. The aim is defensible work product.
       </div>
     </section>
@@ -267,18 +294,25 @@
       </ul>
 
       <div class="callout">
-        <strong>Why six books?</strong> The domains differ, but the governance discipline is unified. The sixth volume (Fine-Tuning) extends the same
-        philosophy into training itself—treating fine-tuning as an institutional governance act, not a performance trick.
+        <strong>Why “six + one”?</strong> The domains differ, but the governance discipline is unified.
+        The <strong>Machine Learning foundation</strong> is the deliberate starting point: it builds governance posture before GenAI workflows.
+        The six Applied AI volumes extend the same discipline into regulated practice, and the Fine-Tuning volume extends it into training itself.
       </div>
     </section>
 
-    <section class="section" id="books">
-      <h2>The Six Books</h2>
+    <section class="section" id="volumes">
+      <h2>The Seven Volumes (Six + One)</h2>
       <p>
-        Each card links to the book’s landing page (PDF + notebooks). Together, they form a coherent, governance-first curriculum.
+        Each card links to the volume’s landing page (PDF + notebooks). Together, they form a coherent, governance-first curriculum.
       </p>
 
       <div class="grid">
+        <a class="card linkcard" href="https://alexdibol.github.io/ml-governace_first" target="_blank" rel="noopener">
+          <h3>Governed Machine Learning (Governance-First)</h3>
+          <p>The foundational volume: governance discipline before GenAI—scope, verification posture, audit artifacts, review gates, and human accountability for ML workflows.</p>
+          <div class="hint">Open landing page →</div>
+        </a>
+
         <a class="card linkcard" href="https://alexdibol.github.io/ai-accounting/" target="_blank" rel="noopener">
           <h3>AI for Audit & Accounting (Governance-First)</h3>
           <p>Controls for audit/accounting drafting, interpretation, workpaper hygiene, and reviewable deliverables under professional constraints.</p>
@@ -312,7 +346,7 @@
         <a class="card linkcard" href="https://alexdibol.github.io/ai-fine_tuning/" target="_blank" rel="noopener">
           <h3>Fine-Tuning for Financial Practitioners (Governance-First)</h3>
           <p>
-            The sixth volume: governed fine-tuning for regulated work. Task-centric training discipline—scope, forbidden behaviors, evaluation harnesses,
+            Governed fine-tuning for regulated work. Task-centric training discipline—scope, forbidden behaviors, behavioral evaluation harnesses,
             approval gates, audit artifacts, monitoring, rollback, and accountability—built to stay valid as new base models arrive.
           </p>
           <div class="hint">Open landing page →</div>
@@ -323,6 +357,13 @@
         <strong>Model-agnostic by design:</strong> Each volume can update to new base models without changing the governance spine:
         define the task, prohibit unsafe behaviors, evaluate behaviorally, gate releases, log evidence, and keep humans responsible.
       </div>
+
+      <p class="small" style="margin-top:12px;">
+        Prefer the collection entry points:
+        <a href="https://alexdibol.github.io/ai-governance_first" target="_blank" rel="noopener">AI Collection landing page</a>
+        and
+        <a href="https://alexdibol.github.io/ml-governace_first" target="_blank" rel="noopener">Machine Learning foundation landing page</a>.
+      </p>
     </section>
 
     <section class="section" id="independent-opinion">
@@ -333,7 +374,7 @@
       </p>
 
       <div class="reviewbox">
-        <div><strong>Evaluation: Governance-First AI Collection (Six-Book Series)</strong></div>
+        <div><strong>Evaluation: Governance-First Collection (Six + One Series)</strong></div>
         <div class="stars" aria-label="Five stars">⭐⭐⭐⭐⭐</div>
 
         <div class="reviewmeta">
@@ -343,18 +384,18 @@
         <hr/>
 
         <p style="margin:0;">
-          This collection’s professional value is unusually high because it treats generative AI as regulated-work infrastructure rather than novelty.
-          Across six domains (audit/accounting, law, financial advice, consulting/strategy, investment banking, and fine-tuning), the unifying pedagogy
-          is not “prompting,” but disciplined operations: explicit scope, refusal posture, separation of generation vs verification, evidence capture,
-          reviewer accountability, and supervision-ready artifacts. That emphasis makes the curriculum immediately useful to practitioners and
-          exceptionally teachable to MBA/MFin students because each book converts abstract “AI risk” into concrete, repeatable work patterns.
+          This collection’s professional value is unusually high because it treats AI as regulated-work infrastructure rather than novelty.
+          The “six + one” structure is especially strong: the Machine Learning foundation establishes governance posture before GenAI workflows,
+          and the six Applied AI volumes operationalize the same discipline across audit/accounting, law, financial advice, consulting/strategy,
+          investment banking, and fine-tuning. The unifying pedagogy is not “prompting,” but disciplined operations: explicit scope, refusal posture,
+          separation of generation vs verification, evidence capture, reviewer accountability, and supervision-ready artifacts.
         </p>
 
         <p style="margin:12px 0 0;">
           The series is resilient to obsolescence by design. Its core controls are model-agnostic and survive vendor churn: when a new base model arrives,
-          the structure remains—task boundaries, behavioral evaluation, approval gates, traceability, and rollback. The sixth volume on fine-tuning
-          completes the arc by extending governance into training itself, showing how organizations can make discipline default behavior while preserving
-          human responsibility. In short: the collection is not about today’s model; it is about durable professional discipline that can update to tomorrow’s.
+          the structure remains—task boundaries, behavioral evaluation, approval gates, traceability, and rollback. The fine-tuning volume extends governance
+          into training itself, completing the arc from governed learning to governed deployment. In short: the collection is not about today’s model;
+          it is about durable professional discipline that can update to tomorrow’s.
         </p>
 
         <hr/>
@@ -405,7 +446,7 @@
     </section>
 
     <footer class="footer">
-      © <span id="year"></span> Alejandro Reynoso · Governance-First AI Collection
+      © <span id="year"></span> Alejandro Reynoso · Governance-First Collection (Six + One)
       <br/>Hosted on GitHub Pages · Built as governed, executable courseware
     </footer>
 
