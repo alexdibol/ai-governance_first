@@ -201,23 +201,6 @@
       letter-spacing:0.02em;
     }
 
-    /* Start-here ribbon (Stage 1 only) */
-    .ribbon{
-      position:absolute;
-      top:14px;
-      right:-44px;
-      transform:rotate(35deg);
-      padding:6px 54px;
-      font-size:11px;
-      font-weight:900;
-      letter-spacing:0.12em;
-      text-transform:uppercase;
-      color:rgba(10,12,18,0.95);
-      background:linear-gradient(135deg, var(--good), var(--good2));
-      border:1px solid rgba(255,255,255,0.18);
-      box-shadow:0 14px 28px rgba(0,0,0,0.30);
-    }
-
     /* Lists / Callouts */
     .callout{
       margin-top:18px;
@@ -460,12 +443,12 @@
 
     <!--
       CONFIGURATION (edit these 4 URLs once, then you can reuse this exact file across sites)
-      If you create a dedicated Stage 2 “GenAI Ops Architecture” entry page, put it in STAGE2_URL.
+      Stage 2 is now the dedicated governed generative applications entry page.
     -->
     <script>
       window.GOV_FIRST = {
         STAGE1_URL: "https://alexdibol.github.io/ml-governance_first",
-        STAGE2_URL: "https://alexdibol.github.io/ai-governance_first",     // <- replace with your dedicated Stage 2 entry page if/when you publish it
+        STAGE2_URL: "https://alexdibol.github.io/ai-governed_generative_applications/",
         STAGE3_URL: "https://alexdibol.github.io/ai-fine_tuning/",
         STAGE4_URL: "http://alexdibol.github.io/ai-governance_2026",
         COLLECTION_MAP_URL: "https://alexdibol.github.io/ai-governance_first"
@@ -574,7 +557,6 @@
 
       <div class="grid">
         <a class="card linkcard" id="stage1Card" href="#" target="_blank" rel="noopener">
-          <div class="ribbon" aria-hidden="true">Start here</div>
           <h3>Stage 1 — Governed Machine Learning (Entry Point)</h3>
           <p>Governance of models and datasets: leakage discipline, drift awareness, evidence-first evaluation, and “Not verified” posture.</p>
           <div class="hint">Open landing page →</div>
@@ -583,7 +565,7 @@
         <a class="card linkcard" id="stage2Card" href="#" target="_blank" rel="noopener">
           <h3>Stage 2 — Governed Generative AI (Organizational Architecture)</h3>
           <p>Governance of workflows: gates, logs, manifests, review packets, refusal posture, and traceability as architecture.</p>
-          <div class="hint">Open Stage 2 entry →</div>
+          <div class="hint">Open landing page →</div>
         </a>
 
         <a class="card linkcard" id="stage3Card" href="#" target="_blank" rel="noopener">
@@ -824,4 +806,3 @@
   </script>
 </body>
 </html>
-
