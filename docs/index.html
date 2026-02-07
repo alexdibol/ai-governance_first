@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width,initial-scale=1" />
 
   <title>Governance-First AI — Complete Training Suite (ML → GenAI Ops → Fine-Tuning → Frontier)</title>
-  <meta name="description" content="Governance-First AI complete training suite for MBA/MFin cohorts and financial practitioners: Machine Learning as the entry point, Governed Generative AI as organizational architecture, Fine-Tuning as governance of intelligence, and Frontier Governance (AI 2026 capstone). Built to remain valid across model generations." />
+  <meta name="description" content="Governance-First AI complete training suite for MBA/MFin cohorts and financial practitioners: Machine Learning as the entry point, Governed Generative AI as organizational architecture, Fine-Tuning as governance of intelligence, and Frontier Governance. Built to remain valid across model generations." />
 
   <style>
     :root{
@@ -293,6 +293,70 @@
       border-top:1px solid rgba(255,255,255,0.08);
     }
 
+    /* Stage explainer (NOT cards; looks like a readable table) */
+    .stageTable{
+      margin-top:18px;
+      border:1px solid var(--border);
+      border-radius:18px;
+      overflow:hidden;
+      background:rgba(20,24,54,0.55);
+      box-shadow:0 10px 30px rgba(0,0,0,0.25);
+    }
+    .stageRow{
+      display:grid;
+      grid-template-columns: 160px 1.4fr 1fr;
+      gap:0;
+      padding:16px 16px;
+      border-top:1px solid rgba(255,255,255,0.08);
+    }
+    .stageRow:first-child{border-top:0;}
+    .stageTag{
+      font-size:12px;
+      font-weight:900;
+      letter-spacing:0.10em;
+      text-transform:uppercase;
+      color:var(--muted);
+    }
+    .stageName{
+      font-size:16px;
+      font-weight:900;
+      color:var(--text);
+      margin:0 0 6px;
+      line-height:1.25;
+    }
+    .stageDesc{
+      color:var(--muted);
+      font-size:13px;
+      margin:0;
+      max-width:78ch;
+    }
+    .stageObj{
+      color:var(--muted);
+      font-size:13px;
+      margin:0;
+    }
+    .stageObj strong{color:var(--text);}
+    .stageCell{
+      padding-right:14px;
+    }
+    .stageCell:last-child{
+      padding-right:0;
+      border-left:1px solid rgba(255,255,255,0.08);
+      padding-left:14px;
+    }
+    .stageHeader{
+      display:grid;
+      grid-template-columns: 160px 1.4fr 1fr;
+      padding:14px 16px;
+      background:rgba(0,0,0,0.16);
+      border-bottom:1px solid rgba(255,255,255,0.08);
+      color:var(--muted);
+      font-size:12px;
+      font-weight:900;
+      letter-spacing:0.08em;
+      text-transform:uppercase;
+    }
+
     /* Review box */
     .reviewbox{
       margin-top:18px;
@@ -355,6 +419,12 @@
       border:1px solid rgba(255,255,255,0.10);
     }
 
+    @media (max-width:900px){
+      .stageHeader, .stageRow{grid-template-columns: 1fr;}
+      .stageCell:last-child{border-left:0; padding-left:0; padding-top:10px;}
+      .stageCell{padding-right:0;}
+      .hero h1{max-width:unset;}
+    }
     @media (max-width:720px){
       .hero{padding:28px 20px;}
       .hero h1{font-size:30px;}
@@ -379,9 +449,8 @@
       <nav class="nav" aria-label="Jump links">
         <a href="#top">Home</a>
         <a href="#ladder">Training Ladder</a>
-        <a href="#why">Why This Works</a>
+        <a href="#why">Why</a>
         <a href="#stages">Stages</a>
-        <a href="#capstone">Capstone</a>
         <a href="#evaluations">Evaluation</a>
         <a href="#disclaimer">Disclaimers</a>
         <a href="https://alexdibol.github.io/ai-governance_first" target="_blank" rel="noopener">AI Collection Map</a>
@@ -426,8 +495,8 @@
       <hr class="divider" />
 
       <div class="callout">
-        <strong>How to use this page:</strong> treat each stage below as the stable navigation layer.
-        The <strong>maturity ladder</strong> is the only place where Stage links live, to keep navigation clean and non-redundant.
+        <strong>How to use this page:</strong> treat the ladder as the stable navigation layer.
+        Stage links exist only in the ladder to keep navigation clean and predictable.
       </div>
 
       <p class="mini">
@@ -459,7 +528,7 @@
       </div>
     </section>
 
-    <!-- LADDER (THE ONLY PLACE WITH STAGE LINKS) -->
+    <!-- LADDER (ONLY PLACE WITH LINKS) -->
     <section class="section" id="ladder">
       <h2>The Governance Maturity Ladder (4 Stages)</h2>
       <p>
@@ -497,120 +566,101 @@
            href="http://alexdibol.github.io/ai-governance_2026"
            target="_blank" rel="noopener">
           <h3>Stage 4 — Frontier Governance (Governance-Native)</h3>
-          <p>2026 capstone: frontier systems treated as governance-native—tool mediation, provenance, multimodal defenses, and control stacks.</p>
+          <p>Frontier systems treated as governance-native—tool mediation, provenance, multimodal defenses, and control stacks.</p>
           <div class="hint">Open landing page →</div>
         </a>
       </div>
 
       <div class="callout">
-        <strong>What changes at each stage:</strong>
-        Stage 1 governs <em>models and data</em>. Stage 2 governs <em>organizational workflows</em>.
-        Stage 3 governs <em>behavior via training</em>. Stage 4 governs <em>end-to-end frontier system stacks</em>.
-      </div>
-
-      <div class="callout">
         <strong>Navigation rule:</strong> Always route newcomers through <strong>Stage 1</strong>. Do not start at Stage 4.
-        Frontier governance only becomes usable once evidence discipline and workflow governance are internalized.
+        Frontier governance becomes usable only once evidence discipline and workflow governance are internalized.
       </div>
     </section>
 
-    <!-- STAGES DETAIL -->
+    <!-- STAGES (REFORMATTED: NOT BLOCK CARDS; NO CLICK CONFUSION) -->
     <section class="section" id="stages">
       <h2>What Each Stage Teaches (And Why the Order Matters)</h2>
       <p>
         The purpose of sequencing is to prevent “governance collapse.” Frontier governance makes no sense if students have not first learned
         evidence discipline, workflow architecture, and behavioral release gates. Each stage solves the failure modes created by the prior one.
+        This section is explanatory only; <strong>links live in the ladder above</strong>.
       </p>
 
-      <div class="grid">
-        <div class="card">
-          <h3>Stage 1 — ML Discipline</h3>
-          <p>
-            Machine learning is the institutional starting point: the first place where outputs become operationalized as “facts.”
-            This stage installs the posture that prevents silent failure: provenance, leakage controls, evaluation realism, and drift awareness.
-          </p>
-          <div class="hint">Governance object: datasets + models</div>
+      <div class="stageTable" role="table" aria-label="Stage explanations table">
+        <div class="stageHeader" role="row">
+          <div role="columnheader">Stage</div>
+          <div role="columnheader">What it teaches</div>
+          <div role="columnheader">Governance object</div>
         </div>
 
-        <div class="card">
-          <h3>Stage 2 — GenAI Ops Architecture</h3>
-          <p>
-            Governance becomes structural. You do not “policy” your way into safety—you build reviewable workflows.
-            Gates, logs, manifests, risk registers, and reviewer sign-off are treated as product features, not paperwork.
-          </p>
-          <div class="hint">Governance object: workflows + review packets</div>
+        <div class="stageRow" role="row">
+          <div class="stageCell" role="cell">
+            <div class="stageTag">Stage 1</div>
+          </div>
+          <div class="stageCell" role="cell">
+            <div class="stageName">ML Discipline</div>
+            <p class="stageDesc">
+              Machine learning is the institutional starting point: the first place where outputs become operationalized as “facts.”
+              This stage installs the posture that prevents silent failure: provenance, leakage controls, evaluation realism, and drift awareness.
+            </p>
+          </div>
+          <div class="stageCell" role="cell">
+            <p class="stageObj"><strong>Datasets + models</strong><br/>Provenance · leakage discipline · drift awareness · evidence-first evaluation</p>
+          </div>
         </div>
 
-        <div class="card">
-          <h3>Stage 3 — Fine-Tuning Governance</h3>
-          <p>
-            Fine-tuning is a governance act: it shapes what the system does and refuses to do.
-            This stage treats training as controlled release: behavioral tests, approvals, monitoring, and rollback criteria.
-          </p>
-          <div class="hint">Governance object: behavior + training pipeline</div>
+        <div class="stageRow" role="row">
+          <div class="stageCell" role="cell">
+            <div class="stageTag">Stage 2</div>
+          </div>
+          <div class="stageCell" role="cell">
+            <div class="stageName">GenAI Ops Architecture</div>
+            <p class="stageDesc">
+              Governance becomes structural. You do not “policy” your way into safety—you build reviewable workflows.
+              Gates, logs, manifests, risk registers, and reviewer sign-off are treated as product features, not paperwork.
+            </p>
+          </div>
+          <div class="stageCell" role="cell">
+            <p class="stageObj"><strong>Workflows + review packets</strong><br/>Gates · logs · manifests · traceability · refusal posture</p>
+          </div>
         </div>
 
-        <div class="card">
-          <h3>Stage 4 — Frontier Governance-Native Stacks</h3>
-          <p>
-            Frontier systems assume governance as part of the stack: tool mediation, provenance, long-context controls, multimodal defenses,
-            and evaluation harnesses. The capstone teaches where governance fails first—and how to build control stacks that survive reality.
-          </p>
-          <div class="hint">Governance object: end-to-end systems</div>
+        <div class="stageRow" role="row">
+          <div class="stageCell" role="cell">
+            <div class="stageTag">Stage 3</div>
+          </div>
+          <div class="stageCell" role="cell">
+            <div class="stageName">Fine-Tuning Governance</div>
+            <p class="stageDesc">
+              Fine-tuning is a governance act: it shapes what the system does and refuses to do.
+              This stage treats training as controlled release: behavioral tests, approvals, monitoring, and rollback criteria.
+            </p>
+          </div>
+          <div class="stageCell" role="cell">
+            <p class="stageObj"><strong>Behavior + training pipeline</strong><br/>Behavioral evaluation harnesses · release gates · monitoring · rollback</p>
+          </div>
+        </div>
+
+        <div class="stageRow" role="row">
+          <div class="stageCell" role="cell">
+            <div class="stageTag">Stage 4</div>
+          </div>
+          <div class="stageCell" role="cell">
+            <div class="stageName">Frontier Governance-Native Stacks</div>
+            <p class="stageDesc">
+              Frontier systems assume governance as part of the stack: tool mediation, provenance, long-context controls, multimodal defenses,
+              and evaluation harnesses. This stage makes governance “systems-native,” not “document-native.”
+            </p>
+          </div>
+          <div class="stageCell" role="cell">
+            <p class="stageObj"><strong>End-to-end systems</strong><br/>Tool mediation · provenance · multimodal defenses · action gating · control stacks</p>
+          </div>
         </div>
       </div>
 
       <div class="callout">
-        <strong>Instructor-led advantage:</strong> because the author delivers the course, students get real-time correction on the most common failure mode:
-        confusing plausible narrative for verified evidence.
-      </div>
-    </section>
-
-    <!-- CAPSTONE (NO STAGE LINKS HERE; ONLY SUPPORTING LINKS TO PDF/NOTEBOOKS) -->
-    <section class="section" id="capstone">
-      <h2>Capstone: AI Governance 2026 — Frontier Awareness Without the Hype</h2>
-      <p>
-        The capstone extends the Governance-First principles into frontier conditions. It is not a hype report.
-        It is a governance interpretation of how implementation is changing: tool use, multimodality, long-context reasoning,
-        and agentic workflows. The question is operational: <strong>what must be governed differently</strong> when systems can plan,
-        call tools, ingest documents, or take semi-autonomous actions?
-      </p>
-
-      <div class="grid">
-        <a class="card linkcard"
-           href="https://github.com/alexdibol/ai-governance_2026/blob/main/book/BOOK%20VOLUME%201.pdf"
-           target="_blank" rel="noopener">
-          <h3>Capstone Volume 1 (PDF)</h3>
-          <p>Frontier developments and governance implications, presented as implementation patterns and control expectations.</p>
-          <div class="hint">Open PDF →</div>
-        </a>
-
-        <a class="card linkcard"
-           href="https://github.com/alexdibol/ai-governance_2026/blob/main/book/BOOK%20VOLUME%202.pdf"
-           target="_blank" rel="noopener">
-          <h3>Capstone Volume 2 (PDF)</h3>
-          <p>Extended frontier topics, governance-native architectures, and control stack evolution paths.</p>
-          <div class="hint">Open PDF →</div>
-        </a>
-
-        <a class="card linkcard"
-           href="https://github.com/alexdibol/ai-governance_2026/tree/main/notebooks"
-           target="_blank" rel="noopener">
-          <h3>Capstone Notebooks (10 Colab Labs)</h3>
-          <p>Hands-on implementation: each chapter notebook implements one chapter’s ideas with governed artifacts and review posture.</p>
-          <div class="hint">Open notebooks folder →</div>
-        </a>
-      </div>
-
-      <div class="mini">
-        Reference convention:<br/>
-        <code>https://github.com/alexdibol/ai-governance_2026/blob/main/notebooks/CHAPTER_1.ipynb</code>
-      </div>
-
-      <div class="callout">
-        <strong>What “governance-native” means here:</strong>
-        in frontier implementations, governance is no longer a policy memo; it is engineered into tool mediation, provenance,
-        evaluation harnesses, and action gating. This capstone teaches the architecture.
+        <strong>Instructor-led advantage:</strong> because the author delivers the course, students get real-time correction on the most common
+        failure mode: confusing plausible narrative for verified evidence.
       </div>
     </section>
 
@@ -637,7 +687,7 @@
           The training suite is compelling because it treats AI as high-accountability infrastructure rather than novelty.
           The ladder structure is pedagogically strong for MBA/MFin cohorts: it starts where institutional risk begins (ML),
           moves into governance as architecture (GenAI workflows with gates/logs/manifests), advances into governance of intelligence (fine-tuning),
-          and culminates in frontier governance-native systems (capstone). The suite’s differentiator is operational realism:
+          and culminates in frontier governance-native systems. The suite’s differentiator is operational realism:
           it trains scope discipline, verification posture, and reviewable evidence artifacts rather than “prompt cleverness.”
         </p>
 
@@ -717,7 +767,7 @@
       <div style="margin-top:12px;">
         <a href="#top">Home</a> ·
         <a href="#ladder">Training Ladder</a> ·
-        <a href="#capstone">Capstone</a> ·
+        <a href="#stages">Stages</a> ·
         <a href="#evaluations">Evaluation</a> ·
         <a href="#disclaimer">Disclaimers</a> ·
         <a href="https://alexdibol.github.io/ai-governance_first" target="_blank" rel="noopener">AI Collection Map</a>
