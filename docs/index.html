@@ -382,9 +382,9 @@
         <a href="#why">Why This Works</a>
         <a href="#stages">Stages</a>
         <a href="#capstone">Capstone</a>
-        <a href="#links">Canonical Links</a>
         <a href="#evaluations">Evaluation</a>
         <a href="#disclaimer">Disclaimers</a>
+        <a href="https://alexdibol.github.io/ai-governance_first" target="_blank" rel="noopener">AI Collection Map</a>
       </nav>
     </header>
 
@@ -405,8 +405,8 @@
 
       <div class="pillrow" aria-label="Architecture principles">
         <span class="pill"><span class="dot"></span> Entry Point = ML Discipline</span>
-        <span class="pill"><span class="dot g"></span> GenAI Governance = Org Architecture</span>
-        <span class="pill"><span class="dot y"></span> Fine-Tuning = Governance of Intelligence</span>
+        <span class="pill"><span class="dot.g"></span> GenAI Governance = Org Architecture</span>
+        <span class="pill"><span class="dot.y"></span> Fine-Tuning = Governance of Intelligence</span>
         <span class="pill"><span class="dot"></span> Frontier = Governance-Native Systems</span>
       </div>
 
@@ -427,7 +427,7 @@
 
       <div class="callout">
         <strong>How to use this page:</strong> treat each stage below as the stable navigation layer.
-        Each card links to the canonical landing page/repository where the corresponding PDFs, notebooks, and governance artifacts live.
+        The <strong>maturity ladder</strong> is the only place where Stage links live, to keep navigation clean and non-redundant.
       </div>
 
       <p class="mini">
@@ -459,12 +459,13 @@
       </div>
     </section>
 
-    <!-- LADDER -->
+    <!-- LADDER (THE ONLY PLACE WITH STAGE LINKS) -->
     <section class="section" id="ladder">
       <h2>The Governance Maturity Ladder (4 Stages)</h2>
       <p>
-        Each stage has a distinct governance object: <strong>models</strong> → <strong>workflows</strong> → <strong>intelligence</strong> → <strong>frontier systems</strong>.
-        Use these cards as the canonical navigation to the full training suite.
+        This is the clean architecture for the training suite. Each stage has a distinct governance object:
+        <strong>models</strong> → <strong>workflows</strong> → <strong>intelligence</strong> → <strong>frontier systems</strong>.
+        Learners should feel exactly what changes at each step and why the controls must evolve.
       </p>
 
       <div class="grid">
@@ -473,7 +474,7 @@
            target="_blank" rel="noopener">
           <h3>Stage 1 — Governed Machine Learning (Entry Point)</h3>
           <p>Governance of models and datasets: leakage discipline, drift awareness, evidence-first evaluation, and “Not verified” posture.</p>
-          <div class="hint">Open Stage 1 landing page →</div>
+          <div class="hint">Open landing page →</div>
         </a>
 
         <a class="card linkcard"
@@ -481,7 +482,7 @@
            target="_blank" rel="noopener">
           <h3>Stage 2 — Governed Generative AI (Organizational Architecture)</h3>
           <p>Governance of workflows: gates, logs, manifests, review packets, refusal posture, and traceability as architecture.</p>
-          <div class="hint">Open Stage 2 collection map →</div>
+          <div class="hint">Open collection map →</div>
         </a>
 
         <a class="card linkcard"
@@ -489,15 +490,15 @@
            target="_blank" rel="noopener">
           <h3>Stage 3 — Fine-Tuning (Governance of Intelligence)</h3>
           <p>Governance inside the system: task boundaries, behavioral evaluation harnesses, release gates, monitoring, rollback, and accountability.</p>
-          <div class="hint">Open Stage 3 landing page →</div>
+          <div class="hint">Open landing page →</div>
         </a>
 
         <a class="card linkcard"
-           href="https://github.com/alexdibol/ai-governance_2026"
+           href="http://alexdibol.github.io/ai-governance_2026"
            target="_blank" rel="noopener">
           <h3>Stage 4 — Frontier Governance (Governance-Native)</h3>
           <p>2026 capstone: frontier systems treated as governance-native—tool mediation, provenance, multimodal defenses, and control stacks.</p>
-          <div class="hint">Open Stage 4 repository →</div>
+          <div class="hint">Open landing page →</div>
         </a>
       </div>
 
@@ -505,6 +506,11 @@
         <strong>What changes at each stage:</strong>
         Stage 1 governs <em>models and data</em>. Stage 2 governs <em>organizational workflows</em>.
         Stage 3 governs <em>behavior via training</em>. Stage 4 governs <em>end-to-end frontier system stacks</em>.
+      </div>
+
+      <div class="callout">
+        <strong>Navigation rule:</strong> Always route newcomers through <strong>Stage 1</strong>. Do not start at Stage 4.
+        Frontier governance only becomes usable once evidence discipline and workflow governance are internalized.
       </div>
     </section>
 
@@ -560,7 +566,7 @@
       </div>
     </section>
 
-    <!-- CAPSTONE / 2026 -->
+    <!-- CAPSTONE (NO STAGE LINKS HERE; ONLY SUPPORTING LINKS TO PDF/NOTEBOOKS) -->
     <section class="section" id="capstone">
       <h2>Capstone: AI Governance 2026 — Frontier Awareness Without the Hype</h2>
       <p>
@@ -591,7 +597,7 @@
            href="https://github.com/alexdibol/ai-governance_2026/tree/main/notebooks"
            target="_blank" rel="noopener">
           <h3>Capstone Notebooks (10 Colab Labs)</h3>
-          <p>Hands-on implementation: each chapterPter notebook implements one chapter’s ideas with governed artifacts and review posture.</p>
+          <p>Hands-on implementation: each chapter notebook implements one chapter’s ideas with governed artifacts and review posture.</p>
           <div class="hint">Open notebooks folder →</div>
         </a>
       </div>
@@ -605,45 +611,6 @@
         <strong>What “governance-native” means here:</strong>
         in frontier implementations, governance is no longer a policy memo; it is engineered into tool mediation, provenance,
         evaluation harnesses, and action gating. This capstone teaches the architecture.
-      </div>
-    </section>
-
-    <!-- CANONICAL LINKS -->
-    <section class="section" id="links">
-      <h2>Canonical Entry Points (Keep Navigation Clean)</h2>
-      <p>
-        Use these stable entry points. Individual repositories can evolve, but the ladder remains constant.
-      </p>
-
-      <div class="grid">
-        <a class="card linkcard" href="https://alexdibol.github.io/ml-governance_first" target="_blank" rel="noopener">
-          <h3>Stage 1 — Governed Machine Learning</h3>
-          <p>Start here. Governance discipline before GenAI: evidence-first posture for data and models.</p>
-          <div class="hint">Open landing page →</div>
-        </a>
-
-        <a class="card linkcard" href="https://alexdibol.github.io/ai-governance_first" target="_blank" rel="noopener">
-          <h3>Stage 2 — Governed Generative AI (Collection Map)</h3>
-          <p>Canonical map of the domain volumes and governance-as-architecture patterns.</p>
-          <div class="hint">Open landing page →</div>
-        </a>
-
-        <a class="card linkcard" href="https://alexdibol.github.io/ai-fine_tuning/" target="_blank" rel="noopener">
-          <h3>Stage 3 — Fine-Tuning for Financial Practitioners</h3>
-          <p>Training as governance: behavioral eval harnesses, gates, monitoring, rollback, accountability.</p>
-          <div class="hint">Open landing page →</div>
-        </a>
-
-        <a class="card linkcard" href="https://github.com/alexdibol/ai-governance_2026" target="_blank" rel="noopener">
-          <h3>Stage 4 — AI Governance 2026 Capstone</h3>
-          <p>Frontier governance-native stacks: tool mediation, provenance, multimodal defenses, and control stacks.</p>
-          <div class="hint">Open repository →</div>
-        </a>
-      </div>
-
-      <div class="callout">
-        <strong>Navigation rule:</strong> Always route newcomers through <strong>Stage 1</strong>. Do not start at Stage 4.
-        Frontier governance only becomes usable once evidence discipline and workflow governance are internalized.
       </div>
     </section>
 
@@ -750,9 +717,10 @@
       <div style="margin-top:12px;">
         <a href="#top">Home</a> ·
         <a href="#ladder">Training Ladder</a> ·
-        <a href="#links">Links</a> ·
-        <a href="https://alexdibol.github.io/ai-governance_first" target="_blank" rel="noopener">AI Collection Map</a> ·
-        <a href="#disclaimer">Disclaimers</a>
+        <a href="#capstone">Capstone</a> ·
+        <a href="#evaluations">Evaluation</a> ·
+        <a href="#disclaimer">Disclaimers</a> ·
+        <a href="https://alexdibol.github.io/ai-governance_first" target="_blank" rel="noopener">AI Collection Map</a>
       </div>
       <div style="margin-top:12px; opacity:0.9;">
         <span class="small">Status: <code>Not verified</code> · This page is an educational entry point, not an institutional certification.</span>
