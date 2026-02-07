@@ -19,6 +19,8 @@
       --accent2:#6ee7c8;
       --warn:#ffd27a;
       --shadow:0 18px 60px rgba(0,0,0,0.45);
+      --good:rgba(110,231,200,0.95);
+      --good2:rgba(122,162,255,0.85);
     }
     *{box-sizing:border-box;}
     html,body{height:100%;}
@@ -160,6 +162,8 @@
       background:rgba(20,24,54,0.72);
       border:1px solid var(--border);
       box-shadow:0 10px 30px rgba(0,0,0,0.30);
+      position:relative;
+      overflow:hidden;
     }
     .card h3{
       margin:0 0 10px;
@@ -195,6 +199,23 @@
       opacity:0.92;
       font-weight:700;
       letter-spacing:0.02em;
+    }
+
+    /* Start-here ribbon (Stage 1 only) */
+    .ribbon{
+      position:absolute;
+      top:14px;
+      right:-44px;
+      transform:rotate(35deg);
+      padding:6px 54px;
+      font-size:11px;
+      font-weight:900;
+      letter-spacing:0.12em;
+      text-transform:uppercase;
+      color:rgba(10,12,18,0.95);
+      background:linear-gradient(135deg, var(--good), var(--good2));
+      border:1px solid rgba(255,255,255,0.18);
+      box-shadow:0 14px 28px rgba(0,0,0,0.30);
     }
 
     /* Lists / Callouts */
@@ -293,7 +314,7 @@
       border-top:1px solid rgba(255,255,255,0.08);
     }
 
-    /* Stage explainer (NOT cards; looks like a readable table) */
+    /* Stage explainer (NOT clickable cards) */
     .stageTable{
       margin-top:18px;
       border:1px solid var(--border);
@@ -437,6 +458,20 @@
 <body>
   <main class="container">
 
+    <!--
+      CONFIGURATION (edit these 4 URLs once, then you can reuse this exact file across sites)
+      If you create a dedicated Stage 2 “GenAI Ops Architecture” entry page, put it in STAGE2_URL.
+    -->
+    <script>
+      window.GOV_FIRST = {
+        STAGE1_URL: "https://alexdibol.github.io/ml-governance_first",
+        STAGE2_URL: "https://alexdibol.github.io/ai-governance_first",     // <- replace with your dedicated Stage 2 entry page if/when you publish it
+        STAGE3_URL: "https://alexdibol.github.io/ai-fine_tuning/",
+        STAGE4_URL: "http://alexdibol.github.io/ai-governance_2026",
+        COLLECTION_MAP_URL: "https://alexdibol.github.io/ai-governance_first"
+      };
+    </script>
+
     <header class="topbar" aria-label="Repository navigation">
       <div class="brand" aria-label="Governance-First collection brand">
         <div class="logo" aria-hidden="true"></div>
@@ -453,7 +488,7 @@
         <a href="#stages">Stages</a>
         <a href="#evaluations">Evaluation</a>
         <a href="#disclaimer">Disclaimers</a>
-        <a href="https://alexdibol.github.io/ai-governance_first" target="_blank" rel="noopener">AI Collection Map</a>
+        <a href="#" id="mapLink" target="_blank" rel="noopener">AI Collection Map</a>
       </nav>
     </header>
 
@@ -474,8 +509,8 @@
 
       <div class="pillrow" aria-label="Architecture principles">
         <span class="pill"><span class="dot"></span> Entry Point = ML Discipline</span>
-        <span class="pill"><span class="dot.g"></span> GenAI Governance = Org Architecture</span>
-        <span class="pill"><span class="dot.y"></span> Fine-Tuning = Governance of Intelligence</span>
+        <span class="pill"><span class="dot g"></span> GenAI Governance = Org Architecture</span>
+        <span class="pill"><span class="dot y"></span> Fine-Tuning = Governance of Intelligence</span>
         <span class="pill"><span class="dot"></span> Frontier = Governance-Native Systems</span>
       </div>
 
@@ -488,7 +523,7 @@
 
       <div class="btnrow" aria-label="Quick actions">
         <a class="btn" href="#ladder">Explore the Training Ladder</a>
-        <a class="btn secondary" href="https://alexdibol.github.io/ai-governance_first" target="_blank" rel="noopener">AI Collection Map</a>
+        <a class="btn secondary" href="#" id="mapBtn" target="_blank" rel="noopener">AI Collection Map</a>
         <a class="btn secondary" href="#disclaimer">Read Disclaimers</a>
       </div>
 
@@ -538,33 +573,26 @@
       </p>
 
       <div class="grid">
-        <a class="card linkcard"
-           href="https://alexdibol.github.io/ml-governance_first"
-           target="_blank" rel="noopener">
+        <a class="card linkcard" id="stage1Card" href="#" target="_blank" rel="noopener">
+          <div class="ribbon" aria-hidden="true">Start here</div>
           <h3>Stage 1 — Governed Machine Learning (Entry Point)</h3>
           <p>Governance of models and datasets: leakage discipline, drift awareness, evidence-first evaluation, and “Not verified” posture.</p>
           <div class="hint">Open landing page →</div>
         </a>
 
-        <a class="card linkcard"
-           href="https://alexdibol.github.io/ai-governance_first"
-           target="_blank" rel="noopener">
+        <a class="card linkcard" id="stage2Card" href="#" target="_blank" rel="noopener">
           <h3>Stage 2 — Governed Generative AI (Organizational Architecture)</h3>
           <p>Governance of workflows: gates, logs, manifests, review packets, refusal posture, and traceability as architecture.</p>
-          <div class="hint">Open collection map →</div>
+          <div class="hint">Open Stage 2 entry →</div>
         </a>
 
-        <a class="card linkcard"
-           href="https://alexdibol.github.io/ai-fine_tuning/"
-           target="_blank" rel="noopener">
+        <a class="card linkcard" id="stage3Card" href="#" target="_blank" rel="noopener">
           <h3>Stage 3 — Fine-Tuning (Governance of Intelligence)</h3>
           <p>Governance inside the system: task boundaries, behavioral evaluation harnesses, release gates, monitoring, rollback, and accountability.</p>
           <div class="hint">Open landing page →</div>
         </a>
 
-        <a class="card linkcard"
-           href="http://alexdibol.github.io/ai-governance_2026"
-           target="_blank" rel="noopener">
+        <a class="card linkcard" id="stage4Card" href="#" target="_blank" rel="noopener">
           <h3>Stage 4 — Frontier Governance (Governance-Native)</h3>
           <p>Frontier systems treated as governance-native—tool mediation, provenance, multimodal defenses, and control stacks.</p>
           <div class="hint">Open landing page →</div>
@@ -575,9 +603,14 @@
         <strong>Navigation rule:</strong> Always route newcomers through <strong>Stage 1</strong>. Do not start at Stage 4.
         Frontier governance becomes usable only once evidence discipline and workflow governance are internalized.
       </div>
+
+      <p class="mini">
+        <strong>Mirror-ready template:</strong> This file is intentionally reusable. If you want your <code>ai-governance_2026</code> page to match
+        perfectly, reuse this same HTML and only change the 4 URLs in <code>window.GOV_FIRST</code>.
+      </p>
     </section>
 
-    <!-- STAGES (REFORMATTED: NOT BLOCK CARDS; NO CLICK CONFUSION) -->
+    <!-- STAGES (EXPLANATORY ONLY; NO CLICK CONFUSION) -->
     <section class="section" id="stages">
       <h2>What Each Stage Teaches (And Why the Order Matters)</h2>
       <p>
@@ -594,9 +627,7 @@
         </div>
 
         <div class="stageRow" role="row">
-          <div class="stageCell" role="cell">
-            <div class="stageTag">Stage 1</div>
-          </div>
+          <div class="stageCell" role="cell"><div class="stageTag">Stage 1</div></div>
           <div class="stageCell" role="cell">
             <div class="stageName">ML Discipline</div>
             <p class="stageDesc">
@@ -610,9 +641,7 @@
         </div>
 
         <div class="stageRow" role="row">
-          <div class="stageCell" role="cell">
-            <div class="stageTag">Stage 2</div>
-          </div>
+          <div class="stageCell" role="cell"><div class="stageTag">Stage 2</div></div>
           <div class="stageCell" role="cell">
             <div class="stageName">GenAI Ops Architecture</div>
             <p class="stageDesc">
@@ -626,9 +655,7 @@
         </div>
 
         <div class="stageRow" role="row">
-          <div class="stageCell" role="cell">
-            <div class="stageTag">Stage 3</div>
-          </div>
+          <div class="stageCell" role="cell"><div class="stageTag">Stage 3</div></div>
           <div class="stageCell" role="cell">
             <div class="stageName">Fine-Tuning Governance</div>
             <p class="stageDesc">
@@ -642,9 +669,7 @@
         </div>
 
         <div class="stageRow" role="row">
-          <div class="stageCell" role="cell">
-            <div class="stageTag">Stage 4</div>
-          </div>
+          <div class="stageCell" role="cell"><div class="stageTag">Stage 4</div></div>
           <div class="stageCell" role="cell">
             <div class="stageName">Frontier Governance-Native Stacks</div>
             <p class="stageDesc">
@@ -770,7 +795,7 @@
         <a href="#stages">Stages</a> ·
         <a href="#evaluations">Evaluation</a> ·
         <a href="#disclaimer">Disclaimers</a> ·
-        <a href="https://alexdibol.github.io/ai-governance_first" target="_blank" rel="noopener">AI Collection Map</a>
+        <a href="#" id="footerMap" target="_blank" rel="noopener">AI Collection Map</a>
       </div>
       <div style="margin-top:12px; opacity:0.9;">
         <span class="small">Status: <code>Not verified</code> · This page is an educational entry point, not an institutional certification.</span>
@@ -778,5 +803,25 @@
     </footer>
 
   </main>
+
+  <script>
+    // Wire links from the config so you can reuse this HTML everywhere with only 4 URL edits.
+    (function(){
+      const cfg = window.GOV_FIRST || {};
+      const byId = (id) => document.getElementById(id);
+
+      const setHref = (id, href) => { const el = byId(id); if(el && href){ el.href = href; } };
+
+      setHref("mapLink", cfg.COLLECTION_MAP_URL);
+      setHref("mapBtn", cfg.COLLECTION_MAP_URL);
+      setHref("footerMap", cfg.COLLECTION_MAP_URL);
+
+      setHref("stage1Card", cfg.STAGE1_URL);
+      setHref("stage2Card", cfg.STAGE2_URL);
+      setHref("stage3Card", cfg.STAGE3_URL);
+      setHref("stage4Card", cfg.STAGE4_URL);
+    })();
+  </script>
 </body>
 </html>
+
