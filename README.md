@@ -181,14 +181,6 @@ SOFTWARE.
 
 ---
 
-## Project files in this repository
-
-- `CITATION.cff` — citation metadata (for academic use)
-- `CODE_OF_CONDUCT.md` — collaboration standards
-- `CONTRIBUTING.md` — contribution rules and governance expectations
-- `LICENSE` — MIT License text (this README includes the customary MIT license terms for convenience)
-
----
 
 ## Contact
 
