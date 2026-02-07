@@ -1,220 +1,199 @@
-# Governance-First AI — Full Training Ladder
+# Governance-First AI — Complete Training Ladder (ML → Governed GenAI Ops → Fine-Tuning → Frontier)
 
 Governance-first · auditable · reproducible · human-accountable  
-PDF volumes + executable Google Colab notebooks
+Built for **MBA / Master of Finance cohorts** and **financial practitioners** operating in high-accountability environments.
 
-This repository is part of the **Governance-First AI Training Suite** — a structured, end-to-end educational framework for building and deploying AI in regulated professional environments (finance, accounting, law, consulting, and investment banking).
-
-The canonical entry point to the complete program is:
-
-👉 **Governance-First AI — Full Training Ladder**  
-https://alexdibol.github.io/ai-governance_first
-
-This README serves as an orientation guide. The landing page contains the authoritative structure.
+**Canonical landing page (the full ladder):**  
+https://alexdibol.github.io/ai-governance_first/
 
 ---
 
-## Purpose of this Collection
+## What this repository is
 
-This project treats AI and Machine Learning as **professional infrastructure**, not experimentation tools.
+This repository is the **entry point** to a coherent, end-to-end education suite for learning **governed AI** in regulated professional practice.
 
-The goal is to teach practitioners how to design AI systems that are:
+Most AI education over-teaches capability and under-teaches control. In finance, law, audit, and regulated strategy work, “useful” means **defensible**:
+reviewable, reproducible, scoped, and accountable.
 
-- auditable  
-- reproducible  
-- governable  
-- reviewable  
-- and legally defensible  
+This suite is designed to remain valid across model generations:
 
-Capability is never separated from control.
+- vendors change  
+- model families change  
+- UI patterns change  
+- **governance discipline endures**
 
-**Core principle**
-
-Capability ↑ → Risk ↑ → Controls MUST ↑
-
----
-
-## The Governance Ladder
-
-The training suite is organized as a progressive ladder:
-
-### 1. Governed Machine Learning (Foundation)
-
-Before generative systems are introduced, governance discipline is established at the ML level:
-
-- scope definition  
-- assumptions control  
-- evaluation posture  
-- artifact generation  
-- human accountability  
-
-Landing page:
-
-https://alexdibol.github.io/ml-governance_first
-
-This is the conceptual substrate for everything that follows.
+**Core premise:**  
+**Capability ↑ ⇒ Risk ↑ ⇒ Controls ↑**
 
 ---
 
-### 2. Governed Generative AI in Professional Domains
+## The governance maturity ladder (4 stages)
 
-Generative AI is introduced through organizational architecture:
+The training suite is intentionally sequenced. Each stage has a different “governance object,” and each stage exists because the prior one has failure modes
+that must be structurally controlled.
 
-- gates  
-- manifests  
-- logs  
-- review workflows  
-- evidence packets  
+1) **Stage 1 — Governed Machine Learning (Entry Point)**  
+   Governance of datasets + models: provenance, leakage discipline, drift awareness, and evidence-first evaluation.  
+   Landing page: https://alexdibol.github.io/ml-governance_first
 
-Applied across regulated domains:
+2) **Stage 2 — Governed Generative AI (Organizational Architecture)**  
+   Governance of workflows: gates, logs, manifests, review packets, refusal posture, traceability.  
+   Landing page: https://alexdibol.github.io/ai-governed_generative_applications/
 
-- Audit & Accounting  
-- Legal Practice  
-- Financial Advice  
-- Consulting & Corporate Strategy  
-- Investment Banking  
+3) **Stage 3 — Fine-Tuning (Governance of Intelligence)**  
+   Governance inside the system: task boundaries, behavioral evaluation harnesses, approval gates, monitoring, rollback, and accountability.  
+   Landing page: https://alexdibol.github.io/ai-fine_tuning/
 
-All domain volumes are accessible here:
+4) **Stage 4 — Frontier Governance (Governance-Native Systems)**  
+   Frontier systems treated as governance-native: tool mediation, provenance, long-context controls, multimodal defenses, evaluation harnesses, control stacks.  
+   Landing page: https://alexdibol.github.io/ai-governance_2026/
 
-https://alexdibol.github.io/ai-governance_first
-
----
-
-### 3. Fine-Tuning as Intelligence-Level Governance
-
-Governance is extended directly into model behavior through disciplined fine-tuning:
-
-- task scoping  
-- forbidden behaviors  
-- behavioral evaluation harnesses  
-- approval gates  
-- rollback strategies  
-- monitoring  
-
-Landing page:
-
-https://alexdibol.github.io/ai-fine_tuning
-
-Fine-tuning is treated as institutional control — not optimization.
+**Navigation rule:** Always route newcomers through **Stage 1**. Do not start at Stage 4.
 
 ---
 
-### 4. Frontier Governance (AI 2026)
+## What this repository contains
 
-The ladder culminates in a two-volume exploration of frontier AI:
+This repository functions as a **collection map + governance spine** across the ladder:
 
-- agentic systems  
-- reasoning architectures  
-- multimodal risk  
-- emerging deployment patterns  
-- governance-native design  
+- links to stage landing pages and domain volumes
+- reusable governance patterns (scope, boundaries, review posture)
+- shared expectations for notebooks and artifact bundles
+- contribution and conduct standards for public collaboration
 
-Landing page:
-
-https://alexdibol.github.io/ai-governance_2026
-
-This layer examines how modern AI research is becoming governance-aware by necessity.
+> Note: Individual books and notebooks live in their respective repositories.  
+> This repository is the governed index and the stable entry point.
 
 ---
 
-## What This Repository Contains
+## Shared governance spine (applies across the entire ladder)
 
-- PDF volumes  
-- Companion Google Colab notebooks  
-- Executable governance patterns  
-- Synthetic datasets  
-- Evaluation scaffolding  
-- Audit artifact templates  
+Every stage and every domain volume enforces a common posture:
 
-Each notebook is designed to produce inspectable outputs rather than opaque results.
+- **Generation ≠ verification**  
+  Model output is always **Not verified** until a qualified human validates it.
 
-Reading is paired with running.  
-Running is paired with artifacts.  
-Artifacts are paired with human review.
+- **Facts vs assumptions discipline**  
+  Facts provided, assumptions made, and open questions are explicitly separated.
 
----
+- **Scope and boundary control**  
+  Clear task definitions, forbidden behaviors, refusal posture, and stop-if rules.
 
-## Shared Governance Spine (Across All Volumes)
+- **Auditability by design**  
+  Artifacts and logs enable reconstruction, supervision, and review.
 
-Every part of the collection follows the same operational discipline:
+- **Human accountability**  
+  Responsibility never leaves the human professional.
 
-- **Generation ≠ Verification**  
-  Model outputs are always *Not verified* until reviewed by a human.
-
-- **Facts vs Assumptions Separation**  
-  Inputs, assumptions, and open questions are explicitly tracked.
-
-- **Scope Control**  
-  Clear task definitions, refusal posture, and stop-conditions.
-
-- **Auditability by Design**  
-  Logs and artifacts enable reconstruction and supervision.
-
-- **Human Accountability**  
-  Responsibility never transfers to the model.
-
-- **Model-Agnostic Architecture**  
-  Governance survives vendor and model changes.
+- **Model-agnostic by design**  
+  Governance remains valid as models and vendors change.
 
 ---
 
-## Intended Audience
+## Who this is for
 
-This collection is designed for:
+Designed for:
 
-- Master of Finance students  
-- MBA students  
-- Financial practitioners  
-- Consultants  
-- Legal professionals  
-- Technical leaders implementing AI in regulated environments  
+- MBA and Master of Finance students  
+- financial practitioners in regulated environments  
+- risk / compliance / model governance teams  
+- transformation and innovation leaders  
+- instructors teaching applied AI responsibly  
 
-It is delivered as instructor-guided coursework with hands-on execution.
+This is not a “prompt tricks” repository.
+
+The objective is not performance.  
+The objective is **governance literacy** and **professional defensibility**.
 
 ---
 
-## Use of Generative AI (Transparency Statement)
+## Use of generative AI tools (transparency statement)
 
-Generative AI tools may have been used to assist in drafting, editing, formatting, or code scaffolding throughout this collection.
+Generative AI tools may have been used to assist in drafting, editing, formatting, or code scaffolding across the broader collection.
 
 However:
 
 - conceptual design  
 - pedagogical structure  
-- governance framework  
-- risk taxonomy  
-- artifact standards  
+- governance logic and control definitions  
 - integration decisions  
-- and final editorial judgment  
+- final editorial judgment and acceptance  
 
-were **human-led, human-supervised, and human-approved at all times**.
+were **human-led, human-supervised, and human-approved** at all times.
 
-The author assumes full responsibility for the content, structure, interpretation, and conclusions presented in this work.
-
-All materials should be treated as potentially fallible and must be independently reviewed before any real-world use.
+The author assumes **full responsibility** for the content, structure, interpretation, and conclusions presented in this work.
 
 ---
 
-## Important Disclaimers
+## IMPORTANT DISCLAIMERS (read before use)
 
-- Educational and research use only  
-- Not investment, legal, accounting, tax, or compliance advice  
-- Never input confidential or proprietary data  
-- All outputs require qualified human review  
-- Treat all generated content as unverified unless explicitly validated  
+### Educational / Non-Reliance
+All materials are provided **for educational and research purposes only**.  
+Nothing in this repository (or linked repositories) constitutes:
+
+- investment advice  
+- trading advice  
+- legal advice  
+- tax advice  
+- accounting or audit advice  
+- compliance determinations  
+- operational recommendations  
+
+Qualified human professionals must review, verify, and approve any real-world use.
+
+### Not verified
+Unless explicitly stated otherwise in a particular artifact, treat all outputs, claims, calculations, citations, and conclusions as **Not verified**.
+
+### Confidentiality and data hygiene
+Do not paste confidential, proprietary, regulated, or personally identifying information into external systems.  
+Use anonymization/redaction and **minimum-necessary** inputs by default.  
+You are responsible for compliance with privacy, confidentiality, recordkeeping, and information security obligations.
+
+### No fabricated sources or claims
+Zero tolerance for invented citations, product terms, performance claims, fees, or consequences.  
+When evidence is missing, the correct output is a **verification task list**, not persuasive narrative.
 
 ---
 
-## License
+## License (MIT)
 
-See the `LICENSE` file in this repository.
+This project is released under the **MIT License**.
+
+**Copyright (c) 2026 Alejandro Reynoso**
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the “Software”), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED “AS IS”, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
 
 ---
 
-**Summary**
+## Project files in this repository
 
-This is not a prompt library.
+- `CITATION.cff` — citation metadata (for academic use)
+- `CODE_OF_CONDUCT.md` — collaboration standards
+- `CONTRIBUTING.md` — contribution rules and governance expectations
+- `LICENSE` — MIT License text (this README includes the customary MIT license terms for convenience)
 
-It is a governance operating system for professional AI.
+---
 
+## Contact
 
+Alejandro Reynoso  
+Email: areynoso@yahoo.com  
+GitHub: https://github.com/alexdibol
+
+---
